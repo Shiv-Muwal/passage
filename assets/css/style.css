@@ -61,7 +61,7 @@
     z-index: 20;
     background-image: url(../images/Vector1.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 170% 100%;
     background-position: center;
     left: 0;
 }
@@ -71,10 +71,10 @@
     bottom: 0;
     max-width: 1096px;
     width: 100%;
-    min-height: 383px;
+    min-height: 471px;
     background-image: url(../images/Vector2.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 150% 100%;
     background-position: center;
 }
 
@@ -121,11 +121,11 @@
 }
 
 .pt_100 {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .pb_40 {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .py_92 {
@@ -138,7 +138,7 @@
 }
 
 .pt_65 {
-    padding-top: 65px;
+    padding-top: 55px;
 }
 
 .pt_21 {
@@ -150,23 +150,23 @@
 }
 
 .pb_130 {
-    padding-bottom: 130px;
+    padding-bottom: 50px;
 }
 
 .pt_130 {
-    padding-top: 130px;
+    padding-top: 50px;
 }
 
 .pb_115 {
-    padding-bottom: 115px;
+    padding-bottom:75px;
 }
 
 .pb_140 {
-    padding-bottom: 140px;
+    padding-bottom: 70px;
 }
 
 .pb_164 {
-    padding-bottom: 164px;
+    padding-bottom: 84px;
 }
 
 
@@ -258,9 +258,20 @@
 
 .bg_2 {
     background-image: url(../images/Ready-to-experience.png);
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.z_10{
+    z-index: 10 !important;
+}
+.Vector3{
+    right: 0;
+    top: 0;
+}
+.Vector4{
+    left: 0;
+    bottom: 0;
 }
 
 .accordion-button {
@@ -300,7 +311,6 @@
 
 .box2 {
     padding: 60px 58px;
-    max-width: 384px;
     border-radius: 10px;
     transition: all 400ms ease-in-out;
     border: 1px solid #0000001A
@@ -444,8 +454,8 @@
 
 
 .demo .scroll_down {
-    bottom: 20px;
-    right: 5%;
+    bottom: 0;
+    right: 2%;
     z-index: 2;
     transform: translate(0, -50%);
     transition: opacity .3s;
@@ -457,7 +467,50 @@
     height: 121.63px;
     border-radius: 108px;
 }
-
+@media (min-width:576px) {
+    .pt_100 {
+        padding-top: 100px;
+    }
+    .pb_130 {
+        padding-bottom: 130px;
+    }
+    
+    .pt_130 {
+        padding-top: 130px;
+    }
+    .pb_40 {
+        padding-bottom: 40px;
+    }
+    .pb_115 {
+        padding-bottom: 115px;
+    }
+    .pb_140 {
+        padding-bottom: 140px;
+    }
+    
+    .pb_164 {
+        padding-bottom: 164px;
+    }
+    .pt_65 {
+        padding-top: 65px;
+    }
+    .Vector1{
+        background-size: cover;
+    }
+    .Vector2 {
+        background-size: cover;
+    }
+    .bg_2 {
+        background-size: 100% 100%;
+    }
+    .demo .scroll_down {
+        bottom: 0;
+        right: 5%;
+    }
+    .box2 {
+        max-width: 384px;
+    }
+}
 @media (max-width:768px) {
     .menulist {
         flex-direction: column;
