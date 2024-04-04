@@ -204,6 +204,9 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+.accordion-button{
+    padding: 16px 0 !important;
+}
 .accordion{
     max-width: 860px;
     --bs-accordion-color: none !important;
@@ -227,7 +230,7 @@
     border: none;
 }
 .accordion-body{
-    padding: 0 16px;
+    padding: 0;
 }
 .box2{
     padding: 60px 58px;
