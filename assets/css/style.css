@@ -23,6 +23,9 @@
 .op_70{
     opacity: 70%;
 }
+.op_78{
+    opacity: 78%;
+}
 
 .nav_btn{
     padding: 14px 16px;
@@ -96,8 +99,21 @@
 .pt_21{
     padding-top: 21px;
 }
-
-
+.gap_20{
+    gap: 20px;
+}
+.pb_130{
+    padding-bottom: 130px;
+}
+.pt_130{
+    padding-top: 130px;
+}
+.pb_115{
+    padding-bottom: 115px;
+}
+.pb_164{
+    padding-bottom: 164px;
+}
 
 
 
@@ -234,14 +250,129 @@
 .box2:hover .svg_box2 svg path {
     fill: white !important;
 }
+
 .footer_svg{
 width: 50px;
+transition: all 400ms linear;
     height: 50px;
     border-radius: 131px;
     background: #E6F1FD1A;
     filter: drop-shadow( 0px 4px 20px 0px #00000033);
 }
 .footer_svg:hover svg path{
-    fill:#E6F1FD1A ;
+    fill:var(--color-black) !important;
+
+}
+.footer_svg:hover{
     background: var(--color-white);
+    transition: all 400ms linear;
+}
+.last_line{
+    width: 100%;
+    height: 1px;
+    background: var(--color-white);
+    opacity: 50%;
+}
+.footer_link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: var(--color-white);
+    left: 0;
+    transition: all 400ms linear;
+    bottom: -5px;
+}
+.footer_link:hover::after{
+    width: 100%;
+}
+
+
+
+
+
+.slick-dots {
+    /* position: absolute; */
+    right: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    left: 0 !important;
+}
+
+
+.slick-dots li img:nth-child(1) {
+    display: block;  
+}  
+
+.slick-dots li img:nth-child(2) {
+    display: none;   
+}
+
+.slick-dots li.slick-active img:nth-child(1) {
+    display: none;   
+}
+
+.slick-dots li.slick-active img:nth-child(2) {
+    display: block;  
+}
+
+
+
+
+
+
+.menuicon {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.menuicon.show .bar:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+    transition: all 400ms linear;
+    border-radius: 4px;
+}
+
+.menuicon.show .bar:nth-child(2) {
+    transform: translateX(-100%);
+    transition: all 400ms linear;
+}
+
+.menuicon.show .bar:nth-child(3) {
+    transition: all 400ms linear;
+    transform: translateY(-11px) rotate(-45deg);
+    border-radius: 4px;
+}
+
+.menulist.show {
+    right: 0;
+}
+
+
+@media (max-width:768px) {
+    .menulist {
+        flex-direction: column;
+        position: fixed !important;
+        overflow: hidden;
+        top: 0;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: -100%;
+        z-index: 99;
+        background: var(--color-black);
+        transition: all 600ms linear;
+    }
+
+    .bar {
+        height: 3px;
+        width: 100%;
+        z-index: 150;
+        background: var(--color-white);
+    }
+
 }
