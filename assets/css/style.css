@@ -143,8 +143,8 @@
     border-radius: 30px;
     transition: all 400ms linear;
     cursor: pointer;
-    /* max-width: 364px;
-    height: 474px; */
+     max-width: 364px;
+    /* height: 474px;  */
 }
 .main_box_heading{
     top: 10px;
