@@ -70,6 +70,9 @@
 .w_324{
     max-width: 324px;
 }
+.w_482{
+    max-width: 482px;
+}
 
 
 
@@ -93,6 +96,9 @@
     padding-top: 92px;
     padding-bottom: 92px;
 }
+.pt_60{
+    padding-top: 60px;
+}
 .pt_65{
     padding-top: 65px;
 }
@@ -110,6 +116,9 @@
 }
 .pb_115{
     padding-bottom: 115px;
+}
+.pb_140{
+    padding-bottom: 140px;
 }
 .pb_164{
     padding-bottom: 164px;
@@ -350,6 +359,25 @@ transition: all 400ms linear;
     right: 0;
 }
 
+
+
+
+
+
+
+.demo .scroll_down {
+    bottom: 20px;
+    right: 5%;
+    z-index: 2;
+    transform: translate(0, -50%);
+    transition: opacity .3s;
+  }
+ .down_Arrow{
+    border: 0.53px solid #FFFFFF33;
+    width: 40.3px;
+    height: 121.63px;
+    border-radius: 108px;
+ }
 
 @media (max-width:768px) {
     .menulist {
