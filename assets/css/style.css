@@ -25,6 +25,14 @@
     font-family: "Poppins", sans-serif;
 }
 
+.cursor-p {
+    cursor: pointer;
+}
+
+.z-99 {
+    z-index: 99;
+}
+
 .op_70 {
     opacity: 70%;
 }
@@ -32,6 +40,7 @@
 .op_78 {
     opacity: 78%;
 }
+
 
 .nav_btn {
     padding: 14px 16px;
@@ -53,21 +62,21 @@
 }
 
 .bg_hero {
-    background-image: url(../images/hero.png);
+    background-image: url(../images/webP/Hero.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .Vector1 {
-    top: 100%;
+    top: 8.2%;
     max-width: 1096px;
     width: 100%;
     min-height: 383px;
-    z-index: 20;
-    background-image: url(../images/Vector1.png);
+    z-index: 0;
+    background-image: url(../images/webP/Vector1.webp);
     background-repeat: no-repeat;
-    background-size: 170% 100%;
+    background-size: cover;
     background-position: center;
     left: 0;
 }
@@ -75,13 +84,10 @@
 .Vector2 {
     right: 0;
     bottom: 0;
-    max-width: 1096px;
-    width: 100%;
-    min-height: 471px;
-    background-image: url(../images/Vector2.png);
-    background-repeat: no-repeat;
-    background-size: 150% 100%;
-    background-position: center;
+}
+
+.index_remove {
+    z-index: -1;
 }
 
 .upper_text {
@@ -96,6 +102,10 @@
     left: 50%;
     transform-origin: 0;
     transform: translate(-50%, -50%);
+}
+
+.zn-2 {
+    z-index: -2;
 }
 
 .w_680 {
@@ -146,16 +156,16 @@
     padding-top: 12px;
 }
 
-.pt_34 {
-    padding-top: 34px;
-}
-
 .pt_100 {
     padding-top: 50px;
 }
 
 .pb_40 {
     padding-bottom: 30px;
+}
+
+.pt_34 {
+    padding-top: 34px !important;
 }
 
 .py_92 {
@@ -288,7 +298,7 @@
 }
 
 .bg_2 {
-    background-image: url(../images/Ready-to-experience.png);
+    background-image: url(../images/webP/Ready-to-experience.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -488,7 +498,6 @@
 .demo .scroll_down {
     bottom: -7%;
     right: 4%;
-    z-index: 2;
     transform: translate(0, -50%);
     transition: opacity .3s;
 }
@@ -529,16 +538,12 @@
         padding-bottom: 164px;
     }
 
+    .pt_34 {
+        padding-top: 34px;
+    }
+
     .pt_65 {
         padding-top: 65px;
-    }
-
-    .Vector1 {
-        background-size: cover;
-    }
-
-    .Vector2 {
-        background-size: cover;
     }
 
     .bg_2 {
@@ -553,7 +558,7 @@
 @media (max-width:768px) {
     .menulist {
         flex-direction: column;
-        position: fixed !important;
+        position: absolute !important;
         overflow: hidden;
         top: 0;
         min-height: 100vh;
@@ -574,6 +579,13 @@
         background: var(--color-white);
     }
 
+    .menuicon {
+        z-index: 99;
+    }
+
+    .bar {
+        z-index: 99;
+    }
 }
 
 @media (min-width:1400px) {
