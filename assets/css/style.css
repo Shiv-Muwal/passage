@@ -56,9 +56,9 @@
 }
 
 .nav_bg {
-    background: #0000000A;
+    background: var(--nav-bg);
     backdrop-filter: blur(28px);
-    border-bottom: 1px solid #FFFFFF33;
+    border-bottom: 1px solid var(--down-arrow);
 }
 
 .bg_hero {
@@ -212,7 +212,7 @@
 .round_box {
     position: absolute;
     background: #006EE60A;
-    border: 1px solid #FFFFFF33;
+    border: 1px solid var(--down-arrow);
     backdrop-filter: blur(15px);
     border-radius: 300px;
     top: 50%;
@@ -288,8 +288,8 @@
 .btn_1 {
     padding: 14px 17px;
     border-radius: 90px;
-    background: #006EE6;
-    border: 1px solid #006EE6;
+    background: var(--color-blue);
+    border: 1px solid var(--color-blue);
     margin-top: 20px;
     transition: all 400ms linear;
 }
@@ -364,7 +364,7 @@
     padding: 60px 58px;
     border-radius: 10px;
     transition: all 400ms ease-in-out;
-    border: 1px solid #0000001A
+    border: 1px solid #0000001A;
 }
 
 .box2:hover {
@@ -372,14 +372,14 @@
     border: transparent;
 
     .svg_box2 {
-        background: #006EE6;
+        background: var(--color-blue);
     }
 }
 
 .svg_box2 {
     padding: 17px;
     cursor: pointer;
-    background: #E6F1FD;
+    background: var( --svg-2);
     border-radius: 50px;
     max-width: 70px;
     min-height: 70px;
@@ -399,7 +399,7 @@
     transition: all 400ms linear;
     height: 50px;
     border-radius: 131px;
-    background: #E6F1FD1A;
+    background: var(--footer-svg);
     filter: drop-shadow(0px 4px 20px 0px #00000033);
 }
 
@@ -414,7 +414,7 @@
 
 .img_hover {
     border-radius: 30px;
-    border: 2px solid #00060C33;
+    border: 2px solid var(--img-hover);
 }
 
 .img_scale {
@@ -510,7 +510,7 @@
 }
 
 .down_Arrow {
-    border: 0.53px solid #FFFFFF33;
+    border: 0.53px solid var(--down-arrow);
     width: 40.3px;
     height: 121.63px;
     border-radius: 108px;
