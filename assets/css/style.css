@@ -33,7 +33,7 @@
     opacity: 78%;
 }
 
-.nav_btn {
+/* .nav_btn {
     padding: 14px 16px;
     background: var(--color-blue);
     border: 1px solid var(--color-blue);
@@ -181,7 +181,7 @@
 
 .pb_164 {
     padding-bottom: 84px;
-}
+} */
 
 .round_box{
     position: absolute;
@@ -240,13 +240,7 @@
     transition: all 500ms linear;
 }
 
-.hidden_para {
-    display: none;
-}
 
-.main_box:hover .hidden_para {
-    display: block;
-}
 
 .round_text {
     left: 0;
