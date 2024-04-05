@@ -241,10 +241,6 @@
     transform: translateX(-50%);
 }
 
-.trans:hover .main_box {
-    transform: translateY(-50px);
-}
-
 .main_box:hover {
     .main_box_heading {
         display: none;
@@ -560,6 +556,11 @@
 
     .box2 {
         max-width: 384px;
+    }
+}
+@media (min-width:992px) {
+    .trans:hover .main_box {
+        transform: translateY(-50px);
     }
 }
 
