@@ -241,6 +241,10 @@
     transform: translateX(-50%);
 }
 
+.trans:hover .main_box {
+    transform: translateY(-50px);
+}
+
 .main_box:hover {
     .main_box_heading {
         display: none;
@@ -257,8 +261,6 @@
     .round_text {
         top: 0;
     }
-
-    transform: translateY(-50px);
 
     .btn_1 {
         margin-top: 30px;
@@ -341,10 +343,11 @@
     }
 }
 
-.accordion-button{
-    display:flex;
+.accordion-button {
+    display: flex;
     align-items: start;
 }
+
 .accordion-button:focus {
     box-shadow: none;
 }
