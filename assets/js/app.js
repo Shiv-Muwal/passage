@@ -6,7 +6,7 @@ $('.slider1').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   customPaging: function (slider, i) {
-    return '<a href="#"><img src="./assets/images/Arrow1.svg" /><img src="./assets/images/Arrow2.svg" /></a>';
+    return '<a href="#"><img src="./assets/images/Arrow1.svg"/><img src="./assets/images/Arrow2.svg" /></a>';
   }
 });
 
