@@ -25,6 +25,6 @@ menuicon.addEventListener("click", () => {
 
   document.body.classList.toggle("overflow-hidden");
   menuicon.classList.toggle("show");
-  index_remove.classList.toggle.z-n1;
+  index_remove.classList.toggle("z-n1")
 
 });
