@@ -399,6 +399,7 @@
     transition: all 400ms linear;
     height: 50px;
     border-radius: 131px;
+    cursor: pointer;
     background: var(--footer-svg);
     filter: drop-shadow(0px 4px 20px 0px #00000033);
 }
